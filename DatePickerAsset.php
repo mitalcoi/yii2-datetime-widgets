@@ -11,7 +11,7 @@ use yii\web\AssetBundle;
  */
 class DatePickerAsset extends AssetBundle
 {
-	public $sourcePath = '@vendor/zhuravljov/yii2-datetime-widgets/assets';
+	public $sourcePath = '@vendor/mitalcoi/yii2-datetime-widgets/assets';
 	public $js = [
 		'js/bootstrap-datepicker.js',
 		'js/bootstrap-datepicker.i18n.js',
