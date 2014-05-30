@@ -15,7 +15,8 @@ class DatePickerAsset extends AssetBundle
     	{
         	parent::init();
         	$this->sourcePath = __DIR__ . '/assets';
-    	}	public $js = [
+    	}
+    	public $js = [
 		'js/bootstrap-datepicker.js',
 		'js/bootstrap-datepicker.i18n.js',
 	];
