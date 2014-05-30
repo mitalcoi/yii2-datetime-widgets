@@ -13,8 +13,11 @@ use yii\web\AssetBundle;
  */
 class MomentAsset extends AssetBundle
 {
-	public $sourcePath = '@vendor/zhuravljov/yii2-datetime-widgets/assets';
-
+	public function init()
+    	{
+        	parent::init();
+        	$this->sourcePath = __DIR__ . '/assets';
+    	}
 	public function init()
 	{
 		parent::init();
