@@ -1,5 +1,5 @@
 {
-    "name": "zhuravljov/yii2-datetime-widgets",
+    "name": "mitalcoi/yii2-datetime-widgets",
     "description": "Datetime widgets for Yii2.",
     "keywords": ["yii", "extension", "widget", "datepicker", "datetimepicker", "daterangepicker"],
     "homepage": "https://github.com/zhuravljov/yii2-datetime-widgets",
