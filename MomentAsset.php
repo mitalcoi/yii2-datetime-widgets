@@ -14,13 +14,9 @@ use yii\web\AssetBundle;
 class MomentAsset extends AssetBundle
 {
 	public function init()
-    	{
-        	parent::init();
-        	$this->sourcePath = __DIR__ . '/assets';
-    	}
-	public function init()
 	{
 		parent::init();
+		$this->sourcePath = __DIR__ . '/assets';
 		if (YII_DEBUG) {
 			$this->js = ['js/moment.js', 'js/moment.langs.js'];
 		} else {
