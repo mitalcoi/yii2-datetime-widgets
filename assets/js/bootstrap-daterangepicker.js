@@ -552,11 +552,7 @@
         },
 
         clickCancel: function (e) {
-            this.startDate = this.oldStartDate;
-            this.endDate = this.oldEndDate;
-            this.updateView();
-            this.updateCalendars();
-            this.hide();
+            this.element.val("").trigger("change");
         },
 
         updateMonthYear: function (e) {
