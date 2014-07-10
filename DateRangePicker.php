@@ -16,7 +16,9 @@ class DateRangePicker extends InputWidget
 	/**
 	 * @var array the HTML attributes for the input tag.
 	 */
-	public $options = [];
+	public $options = [
+		'class' => 'form-control'
+	];
 	/**
 	 * @var array options for daterangepicker
 	 */
@@ -54,6 +56,28 @@ class DateRangePicker extends InputWidget
 		if (!isset($this->options['id'])) {
 			$this->options['id'] = $this->hasModel() ? Html::getInputId($this->model, $this->attribute) : $this->getId();
 		}
+		 $this->clientOptions['ranges'] = [
+	            'Today' => [
+	                new JsExpression('moment()'),
+	                new JsExpression('moment()'),
+	            ],
+	            'Yesterday' => [
+	                new JsExpression('moment().subtract("days", 1)'),
+	                new JsExpression('moment()'),
+	            ],
+	            'Last week' => [
+	                new JsExpression('moment().subtract("days", 7)'),
+	                new JsExpression('moment()'),
+	            ],
+	            'Last month' => [
+	                new JsExpression('moment().subtract("days", 30)'),
+	                new JsExpression('moment()'),
+	            ],
+	            'Last year' => [
+	                new JsExpression('moment().subtract("days", 360)'),
+	                new JsExpression('moment()'),
+	            ]
+	        ];
 	}
 
 	public function run()
