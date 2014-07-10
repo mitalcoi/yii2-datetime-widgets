@@ -48,7 +48,7 @@ class DateRangePicker extends InputWidget
 	                    'Dec'
                 ],
                 'firstDay' => 0
-         ];
+         ]];
 
 	public function init()
 	{
