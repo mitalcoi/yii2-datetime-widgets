@@ -20,7 +20,33 @@ class DateRangePicker extends InputWidget
 	/**
 	 * @var array options for daterangepicker
 	 */
-	public $clientOptions = [];
+	public $clientOptions = [
+		'format' => 'DD.MM.YYYY',
+		'separator' => ' - ',
+		'locale' => [
+	                'applyLabel' => 'Apply',
+	                'cancelLabel' => 'Reset',
+	                'fromLabel' => 'From',
+	                'toLabel' => 'To',
+	                'weekLabel' => 'W',
+	                'customRangeLabel' => 'Custom Range',
+	                'daysOfWeek' => ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+	                'monthNames' => [
+	                    'Jan',
+	                    'Feb',
+	                    'Mar',
+	                    'Apr',
+	                    'May',
+	                    'Jun',
+	                    'Jul',
+	                    'Aug',
+	                    'Sep',
+	                    'Oct',
+	                    'Nov',
+	                    'Dec'
+                ],
+                'firstDay' => 0
+         ];
 
 	public function init()
 	{
