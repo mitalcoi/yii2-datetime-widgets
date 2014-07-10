@@ -5,6 +5,7 @@ namespace zhuravljov\widgets;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\widgets\InputWidget;
+use yii\web\JsExpression;
 
 /**
  * Class DateRangePicker
@@ -19,36 +20,37 @@ class DateRangePicker extends InputWidget
 	public $options = [
 		'class' => 'form-control'
 	];
-	/**
-	 * @var array options for daterangepicker
-	 */
-	public $clientOptions = [
-		'format' => 'DD.MM.YYYY',
-		'separator' => ' - ',
-		'locale' => [
-	                'applyLabel' => 'Apply',
-	                'cancelLabel' => 'Reset',
-	                'fromLabel' => 'From',
-	                'toLabel' => 'To',
-	                'weekLabel' => 'W',
-	                'customRangeLabel' => 'Custom Range',
-	                'daysOfWeek' => ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-	                'monthNames' => [
-	                    'Jan',
-	                    'Feb',
-	                    'Mar',
-	                    'Apr',
-	                    'May',
-	                    'Jun',
-	                    'Jul',
-	                    'Aug',
-	                    'Sep',
-	                    'Oct',
-	                    'Nov',
-	                    'Dec'
-                ],
-                'firstDay' => 0
-         ]];
+	    /**
+	     * @var array options for daterangepicker
+	     */
+	    public $clientOptions = [
+	        'format' => 'DD.MM.YYYY',
+	        'separator' => ' - ',
+	        'locale' => [
+	            'applyLabel' => 'Apply',
+	            'cancelLabel' => 'Reset',
+	            'fromLabel' => 'From',
+	            'toLabel' => 'To',
+	            'weekLabel' => 'W',
+	            'customRangeLabel' => 'Custom Range',
+	            'daysOfWeek' => ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+	            'monthNames' => [
+	                'Jan',
+	                'Feb',
+	                'Mar',
+	                'Apr',
+	                'May',
+	                'Jun',
+	                'Jul',
+	                'Aug',
+	                'Sep',
+	                'Oct',
+	                'Nov',
+	                'Dec'
+	            ],
+	            'firstDay' => 0
+	        ]
+	    ];
 
 	public function init()
 	{
