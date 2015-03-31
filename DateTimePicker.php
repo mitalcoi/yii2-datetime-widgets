@@ -1,6 +1,6 @@
 <?php
 
-namespace zhuravljov\widgets;
+namespace mitalcoi\widgets;
 
 use yii\helpers\Html;
 use yii\helpers\Json;
@@ -9,7 +9,6 @@ use yii\widgets\InputWidget;
 /**
  * Class DateTimePicker
  *
- * @author Roman Zhuravlev <zhuravljov@gmail.com>
  */
 class DateTimePicker extends InputWidget
 {

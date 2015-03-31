@@ -1,13 +1,12 @@
 <?php
 
-namespace zhuravljov\widgets;
+namespace mitalcoi\widgets;
 
 use yii\web\AssetBundle;
 
 /**
  * Class DateRangePickerAsset
  *
- * @author Roman Zhuravlev <zhuravljov@gmail.com>
  */
 class DateRangePickerAsset extends AssetBundle
 {

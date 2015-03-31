@@ -9,7 +9,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Add
 
 ```
-"zhuravljov/yii2-datetime-widgets" : "dev-master"
+"mitalcoi/yii2-datetime-widgets" : "dev-master"
 ```
 
 to the require section of your application's `composer.json` file.
@@ -22,7 +22,7 @@ DatePicker
 ### Usage
 
 ```php
-use zhuravljov\widgets\DatePicker;
+use mitalcoi\widgets\DatePicker;
 ```
 
 ```php
@@ -48,7 +48,7 @@ DateTimePicker
 ### Usage
 
 ```php
-use zhuravljov\widgets\DateTimePicker;
+use mitalcoi\widgets\DateTimePicker;
 ```
 
 ```php
@@ -72,7 +72,7 @@ DateRangePicker
 ### Usage
 
 ```php
-use zhuravljov\widgets\DateRangePicker;
+use mitalcoi\widgets\DateRangePicker;
 ```
 
 ```php

@@ -1,13 +1,12 @@
 <?php
 
-namespace zhuravljov\widgets;
+namespace mitalcoi\widgets;
 
 use yii\web\AssetBundle;
 
 /**
  * Class MomentAsset
  *
- * @author Roman Zhuravlev <zhuravljov@gmail.com>
  *
  * @see http://momentjs.com/
  */
