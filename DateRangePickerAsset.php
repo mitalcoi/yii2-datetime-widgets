@@ -23,6 +23,6 @@ class DateRangePickerAsset extends AssetBundle
 	public $depends = [
 		'yii\web\JqueryAsset',
 		'yii\bootstrap\BootstrapAsset',
-		'zhuravljov\widgets\MomentAsset',
+		'mitalcoi\widgets\MomentAsset',
 	];
 }
