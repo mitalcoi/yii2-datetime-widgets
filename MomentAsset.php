@@ -16,10 +16,6 @@ class MomentAsset extends AssetBundle
 	{
 		parent::init();
 		$this->sourcePath = __DIR__ . '/assets';
-		if (YII_DEBUG) {
-			$this->js = ['js/moment.js', 'js/moment.langs.js'];
-		} else {
-			$this->js = ['js/moment-with-langs.min.js'];
-		}
+		$this->js = ['js/moment-with-langs.min.js'];
 	}
 }
