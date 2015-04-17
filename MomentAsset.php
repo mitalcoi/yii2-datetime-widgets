@@ -12,10 +12,10 @@ use yii\web\AssetBundle;
  */
 class MomentAsset extends AssetBundle
 {
+	public $js=['js/moment-with-langs.min.js'];
 	public function init()
 	{
 		parent::init();
 		$this->sourcePath = __DIR__ . '/assets';
-		$this->js = ['js/moment-with-langs.min.js'];
 	}
 }
