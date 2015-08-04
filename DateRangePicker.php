@@ -87,6 +87,9 @@ class DateRangePicker extends InputWidget
         }else{
             $this->clientOptions['ranges']=$this->ranges;
         }
+        if (!isset($this->clientOptions['startDate'])) {
+            $this->clientOptions['startDate'] = (new \DateTime())->modify('-2 weeks')->format("d.m.Y");
+        }
     }
 
     public function run()
