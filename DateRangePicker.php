@@ -67,13 +67,13 @@ class DateRangePicker extends InputWidget
                     new JsExpression('moment()'),
                     new JsExpression('moment()'),
                 ],
-                'Yesterday' => [
+              'Yesterday' => [
                     new JsExpression('moment().subtract("days", 1)'),
-                    new JsExpression('moment()'),
+                    new JsExpression('moment().subtract("days", 1)'),
                 ],
-                'Last week' => [
+                'Last 7 days' => [
                     new JsExpression('moment().subtract("days", 7)'),
-                    new JsExpression('moment()'),
+                    new JsExpression('moment().subtract("days", 1)'),
                 ],
                 'Last month' => [
                     new JsExpression('moment().subtract("days", 30)'),
