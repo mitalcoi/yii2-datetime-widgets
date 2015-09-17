@@ -77,11 +77,11 @@ class DateRangePicker extends InputWidget
                 ],
                 'Last 30 days' => [
                     new JsExpression('moment().subtract("days", 30)'),
-                    new JsExpression('moment()'),
+                    new JsExpression('moment().subtract("days", 1)'),
                 ],
                 'Last 365 days' => [
                     new JsExpression('moment().subtract("days", 360)'),
-                    new JsExpression('moment()'),
+                    new JsExpression('moment().subtract("days", 1)'),
                 ]
             ];
         }else{
